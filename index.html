@@ -4,32 +4,44 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Expense Tracker</title>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
  <div class="container">
-  <div class="type-field">
-   <label for="type"></label>
-   <select name="type" id="type">
-    <option value="card">card</option>
-    <option value="cash">cash</option>
-    <option value="cryptocoin">cryptocoin</option>
-    <option value="other">other</option>
-   </select>
+  <div class="top">
+    <div class="type-field">
+     <label for="type">Type</label>
+     <select name="type" id="type">
+      <option value="card">card</option>
+      <option value="cash">cash</option>
+      <option value="cryptocoin">cryptocoin</option>
+      <option value="other">other</option>
+     </select>
+    </div>
+    <div class="name-field">
+     <label for="name">Name</label>
+     <input type="text">
+    </div>
   </div>
-  <div class="name-field">
-   <label for="name">Name</label>
-   <input type="text">
+
+  <div class="bottom">
+    <div class="date-field">
+     <label for="date">Date</label>
+     <input type="date">
+    </div>
+    <div class="amount-field">
+     <label for="amount">Amount</label>
+     <input type="text">
+    </div>
+    </div>
+
+    <div class="button">
+     <button>add new expenses</button>
+    </div>
   </div>
-  <div class="date-field">
-   <label for="date">Date</label>
-   <input type="date">
-  </div>
-  <div class="amount-field">
-   <label for="amount">Amount</label>
-   <input type="text">
-  </div>
- </div>
+  
+  
  
 </body>
 </html>
