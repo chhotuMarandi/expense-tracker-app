@@ -2,18 +2,26 @@ const type = document.getElementById("type");
 
 const myDate = document.getElementById('dateInput');
 
-let nameInput = document.getElementById('nameInput').value;
+const nameInput = document.getElementById('nameInput');
 
-console.log(newInput)
+const amountInput = document.getElementById("amountInput");
+
+const button = document.getElementById("addButton");
 
 
 
-myDate.addEventListener("change",function(){
+button.addEventListener("click",()=>{
+ console.log(nameInput.value);
+ console.log(amountInput.value)
+})
+
+
+myDate.addEventListener("change",()=>{
  let dateEntered =(myDate.value);
  console.log(dateEntered);
 })
 
-type.addEventListener("click",function(){
+type.addEventListener("click",()=>{
 let typeEntered= type.value;
 console.log(typeEntered)
 })
